@@ -18,6 +18,22 @@ Respond to user interactions.
 >  - Adds or removes an element when a button is clicked.
 
 
+function greetUser() {
+
+  const input = document.getElementById("nameInput");
+  const title = document.getElementById("title");
+
+ 
+  const name = input.value;
+
+ 
+  if (name) {
+    title.textContent = `Hello, ${name}!`;
+  } else {
+    title.textContent = "Hello!";
+  }
+}
+
 # Tasks
 - Create a well-structured HTML5 document.
 - Use at least 5 different HTML elements.
